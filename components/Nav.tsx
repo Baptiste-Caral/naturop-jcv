@@ -1,29 +1,29 @@
 "use client"
 import Image from 'next/image'
 import { ModeToggle } from './ui/toggle-mode'
+import Link from 'next/link'
 
 export default function Nav() {
     return (
         <header>
             <nav>
                 <ul className="flex items-center justify-between">
-                    <li>
-                    <a
-                        className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-                        href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                        src="/vercel.svg"
-                        alt="Vercel Logo"
-                        className="dark:invert"
-                        width={100}
-                        height={24}
-                        priority
-                        />
-                    </a>
+                <div className="w-24"></div>
+                    <li className='flex items-center justify-between'>
+                        <Link className="mx-2" href="/">
+                            <button>Accueil</button>
+                        </Link>
+                        <Link className="mx-2" href="/">
+                            <span className='nav-logo-container flex p-2 flex-col items-center '>
+                                <span className='nav-logo tracking-wider font-bold text-3xl'>Theramade</span>
+                                <span className='nav-sublogo tracking-widest text-xs'>NATURO</span>
+                            </span>
+                        </Link>
+                        <Link className="mx-2" href="/blog">
+                            <button>Blog</button>
+                        </Link>
                     </li>
+                    
                     <li>
                         <ModeToggle />
                     </li>

@@ -73,4 +73,94 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  @media (max-width: 639px) { /* Écran 'sm' */
+    h1 {
+      @apply text-3xl;
+    }
+    h2 {
+      @apply text-2xl;
+    }
+    h3 {
+      @apply text-xl;
+    }
+    h4 {
+      @apply text-lg;
+    }
+    h5 {
+      @apply text-base;
+    }
+  }
+  @media  (min-width: 640px) { /* Écran 'sm' */
+    h1 {
+      @apply text-3xl;
+    }
+    h2 {
+      @apply text-2xl;
+    }
+    h3 {
+      @apply text-xl;
+    }
+    h4 {
+      @apply text-lg;
+    }
+    h5 {
+      @apply text-base;
+    }
+  }
+
+  @media (min-width: 768px) { /* Écran 'md' */
+    h1 {
+      @apply text-4xl;
+    }
+    h2 {
+      @apply text-3xl;
+    }
+    h3 {
+      @apply text-2xl;
+    }
+    h4 {
+      @apply text-xl;
+    }
+    h5 {
+      @apply text-lg;
+    }
+  }
+
+  @media (min-width: 1024px) { /* Écran 'lg' */
+    h1 {
+      @apply text-5xl;
+    }
+    h2 {
+      @apply text-4xl;
+    }
+    h3 {
+      @apply text-3xl;
+    }
+    h4 {
+      @apply text-2xl;
+    }
+    h5 {
+      @apply text-xl;
+    }
+  }
+
+  @media (min-width: 1280px) { /* Écran 'xl' */
+    h1 {
+      @apply text-6xl;
+    }
+    
+    h2 {
+      @apply text-5xl;
+    }
+    h3 {
+      @apply text-4xl;
+    }
+    h4 {
+      @apply text-3xl;
+    }
+    h5 {
+      @apply text-2xl;
+    }
+  }
 }
