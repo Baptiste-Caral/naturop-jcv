@@ -19,7 +19,7 @@ export default async function Blog() {
                 <div>Title: {p.title}</div>
                 <div>Content: {p.content}</div>
                 <div>authorId: {p.authorId}</div>
-                <Link href={`/blog/${p.slug}`}>{p.title}</Link>
+                <Link href="#">{p.title}</Link>
             </div>
         ))}
         </div>
