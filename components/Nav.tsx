@@ -19,6 +19,9 @@ export default function Nav() {
                                 <span className='nav-sublogo tracking-widest text-xs'>NATURO</span>
                             </span>
                         </Link>
+                        <Link className="mx-2" href="/nathuropathe">
+                            <button>Blog</button>
+                        </Link>
                         <Link className="mx-2" href="/blog">
                             <button>Blog</button>
                         </Link>

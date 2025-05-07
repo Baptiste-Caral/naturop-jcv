@@ -3,6 +3,7 @@ import { Inter, Roboto } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from "@/components/theme-provider"
 import Nav from "@/components/Nav"
+import BurgerMenu from '@/components/ui/BurgerMenu'
 
 const inter = Inter({ subsets: ['latin'] })
 const roboto = Roboto({
@@ -30,7 +31,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-            <Nav />
+            <BurgerMenu />
             {children}
         </ThemeProvider>
       </body>
